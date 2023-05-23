@@ -11,6 +11,9 @@
 		5778E3222A146A5400F9A05C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5778E3212A146A5400F9A05C /* ContentView.swift */; };
 		5778E3242A146A5500F9A05C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5778E3232A146A5500F9A05C /* Assets.xcassets */; };
 		5778E3272A146A5500F9A05C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5778E3262A146A5500F9A05C /* Preview Assets.xcassets */; };
+		5778E32F2A147B5B00F9A05C /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 5778E32E2A147B5B00F9A05C /* CombineMoya */; };
+		5778E3312A147B5B00F9A05C /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 5778E3302A147B5B00F9A05C /* Moya */; };
+		5778E3372A147FD900F9A05C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5778E3362A147FD900F9A05C /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,7 @@
 		5778E3212A146A5400F9A05C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5778E3232A146A5500F9A05C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5778E3262A146A5500F9A05C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5778E3362A147FD900F9A05C /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5778E3312A147B5B00F9A05C /* Moya in Frameworks */,
+				5778E32F2A147B5B00F9A05C /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +57,7 @@
 		5778E31E2A146A5400F9A05C /* Greeny-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				5778E3362A147FD900F9A05C /* R.generated.swift */,
 				5778E31F2A146A5400F9A05C /* Greeny_iOSApp.swift */,
 				5778E3212A146A5400F9A05C /* ContentView.swift */,
 				5778E3232A146A5500F9A05C /* Assets.xcassets */,
@@ -83,6 +90,10 @@
 			dependencies = (
 			);
 			name = "Greeny-iOS";
+			packageProductDependencies = (
+				5778E32E2A147B5B00F9A05C /* CombineMoya */,
+				5778E3302A147B5B00F9A05C /* Moya */,
+			);
 			productName = "Greeny-iOS";
 			productReference = 5778E31C2A146A5400F9A05C /* Greeny-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 5778E3132A146A5400F9A05C;
+			packageReferences = (
+				5778E32D2A147B5B00F9A05C /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 5778E31D2A146A5400F9A05C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +153,7 @@
 			files = (
 				5778E3222A146A5400F9A05C /* ContentView.swift in Sources */,
 				5778E3202A146A5400F9A05C /* Greeny_iOSApp.swift in Sources */,
+				5778E3372A147FD900F9A05C /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +352,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5778E32D2A147B5B00F9A05C /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5778E32E2A147B5B00F9A05C /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5778E32D2A147B5B00F9A05C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		5778E3302A147B5B00F9A05C /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5778E32D2A147B5B00F9A05C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5778E3142A146A5400F9A05C /* Project object */;
 }
