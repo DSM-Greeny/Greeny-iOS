@@ -8,14 +8,14 @@ import Foundation
 private class BundleFinder {}
 
 extension Foundation.Bundle {
-    /// Since iOS is a application, the bundle for classes within this module can be used directly.
+    /// Since Greeny is a application, the bundle for classes within this module can be used directly.
     static let module = Bundle(for: BundleFinder.self)
 }
 
 // MARK: - Objective-C Bundle Accessor
 
 @objc
-public class IOSResources: NSObject {
+public class GreenyResources: NSObject {
     @objc public class var bundle: Bundle {
         return .module
     }

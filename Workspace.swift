@@ -3,7 +3,7 @@ import ProjectDescription
 let workspace = Workspace(
     name: "Greeny-iOS",
     projects: [
-        "iOS",
+        "Greeny",
         "Service"
     ],
     fileHeaderTemplate: nil,

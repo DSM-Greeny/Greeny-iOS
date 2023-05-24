@@ -2,12 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Greeny/Greeny.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Service/Service.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:ThirdPartyLib/ThirdPartyLib.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:iOS/iOS.xcodeproj">
    </FileRef>
 </Workspace>

@@ -17,35 +17,7 @@
                BlueprintIdentifier = "CD83DE7C446570466714F1D2"
                BuildableName = "Greeny.app"
                BlueprintName = "Greeny"
-               ReferencedContainer = "container:Greeny/Greeny.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F2B641F230465A1CF012FDED"
-               BuildableName = "Service.framework"
-               BlueprintName = "Service"
-               ReferencedContainer = "container:Service/Service.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F01E11161170C8F2E81DBA6D"
-               BuildableName = "ThirdPartyLib.framework"
-               BlueprintName = "ThirdPartyLib"
-               ReferencedContainer = "container:ThirdPartyLib/ThirdPartyLib.xcodeproj">
+               ReferencedContainer = "container:Greeny.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -54,7 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      disableMainThreadChecker = "YES">
       <Testables>
       </Testables>
    </TestAction>
@@ -75,7 +48,7 @@
             BlueprintIdentifier = "CD83DE7C446570466714F1D2"
             BuildableName = "Greeny.app"
             BlueprintName = "Greeny"
-            ReferencedContainer = "container:Greeny/Greeny.xcodeproj">
+            ReferencedContainer = "container:Greeny.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -92,7 +65,7 @@
             BlueprintIdentifier = "CD83DE7C446570466714F1D2"
             BuildableName = "Greeny.app"
             BlueprintName = "Greeny"
-            ReferencedContainer = "container:Greeny/Greeny.xcodeproj">
+            ReferencedContainer = "container:Greeny.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

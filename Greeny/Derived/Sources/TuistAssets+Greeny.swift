@@ -19,28 +19,28 @@
 // MARK: - Asset Catalogs
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
-public enum IOSAsset {
-  public static let accentColor = IOSColors(name: "AccentColor")
-  public static let background1 = IOSColors(name: "background 1")
-  public static let background2 = IOSColors(name: "background 2")
-  public static let background3 = IOSColors(name: "background 3")
-  public static let background4 = IOSColors(name: "background 4")
-  public static let background5 = IOSColors(name: "background 5")
-  public static let background6 = IOSColors(name: "background 6")
-  public static let background7 = IOSColors(name: "background 7")
-  public static let shadow1 = IOSColors(name: "shadow 1")
-  public static let error1 = IOSColors(name: "Error 1")
-  public static let error2 = IOSColors(name: "Error 2")
-  public static let main1 = IOSColors(name: "Main 1")
-  public static let main2 = IOSColors(name: "Main 2")
-  public static let main3 = IOSColors(name: "Main 3")
-  public static let main4 = IOSColors(name: "Main 4")
+public enum GreenyAsset {
+  public static let accentColor = GreenyColors(name: "AccentColor")
+  public static let background1 = GreenyColors(name: "background 1")
+  public static let background2 = GreenyColors(name: "background 2")
+  public static let background3 = GreenyColors(name: "background 3")
+  public static let background4 = GreenyColors(name: "background 4")
+  public static let background5 = GreenyColors(name: "background 5")
+  public static let background6 = GreenyColors(name: "background 6")
+  public static let background7 = GreenyColors(name: "background 7")
+  public static let shadow1 = GreenyColors(name: "shadow 1")
+  public static let error1 = GreenyColors(name: "Error 1")
+  public static let error2 = GreenyColors(name: "Error 2")
+  public static let main1 = GreenyColors(name: "Main 1")
+  public static let main2 = GreenyColors(name: "Main 2")
+  public static let main3 = GreenyColors(name: "Main 3")
+  public static let main4 = GreenyColors(name: "Main 4")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
 // MARK: - Implementation Details
 
-public final class IOSColors {
+public final class GreenyColors {
   public fileprivate(set) var name: String
 
   #if os(macOS)
@@ -79,10 +79,10 @@ public final class IOSColors {
   }
 }
 
-public extension IOSColors.Color {
+public extension GreenyColors.Color {
   @available(iOS 11.0, tvOS 11.0, watchOS 4.0, macOS 10.13, *)
-  convenience init?(asset: IOSColors) {
-    let bundle = IOSResources.bundle
+  convenience init?(asset: GreenyColors) {
+    let bundle = GreenyResources.bundle
     #if os(iOS) || os(tvOS)
     self.init(named: asset.name, in: bundle, compatibleWith: nil)
     #elseif os(macOS)
@@ -96,8 +96,8 @@ public extension IOSColors.Color {
 #if canImport(SwiftUI)
 @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
 public extension SwiftUI.Color {
-  init(asset: IOSColors) {
-    let bundle = IOSResources.bundle
+  init(asset: GreenyColors) {
+    let bundle = GreenyResources.bundle
     self.init(asset.name, bundle: bundle)
   }
 }
