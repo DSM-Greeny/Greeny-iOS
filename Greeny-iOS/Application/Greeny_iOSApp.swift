@@ -11,7 +11,7 @@ import SwiftUI
 struct Greeny_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
         }
     }
 }

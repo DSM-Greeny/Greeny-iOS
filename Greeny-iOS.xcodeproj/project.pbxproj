@@ -8,21 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		5778E3202A146A5400F9A05C /* Greeny_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5778E31F2A146A5400F9A05C /* Greeny_iOSApp.swift */; };
-		5778E3222A146A5400F9A05C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5778E3212A146A5400F9A05C /* ContentView.swift */; };
 		5778E3242A146A5500F9A05C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5778E3232A146A5500F9A05C /* Assets.xcassets */; };
 		5778E3272A146A5500F9A05C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5778E3262A146A5500F9A05C /* Preview Assets.xcassets */; };
-		5778E32F2A147B5B00F9A05C /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 5778E32E2A147B5B00F9A05C /* CombineMoya */; };
-		5778E3312A147B5B00F9A05C /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 5778E3302A147B5B00F9A05C /* Moya */; };
-		5778E3372A147FD900F9A05C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5778E3362A147FD900F9A05C /* R.generated.swift */; };
+		57A246292A1DA46A00797239 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 57A246282A1DA46A00797239 /* CombineMoya */; };
+		57A2462B2A1DA46A00797239 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 57A2462A2A1DA46A00797239 /* Moya */; };
+		57A246312A1DA4B600797239 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A246302A1DA4B600797239 /* LoginView.swift */; };
+		57A246332A1DA4C300797239 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A246322A1DA4C300797239 /* LoginViewModel.swift */; };
+		57A246362A1DA4F500797239 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A246352A1DA4F500797239 /* Int+.swift */; };
+		57A246392A1DA50F00797239 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A246382A1DA50F00797239 /* AuthButton.swift */; };
+		57A2463B2A1DA64D00797239 /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A2463A2A1DA64D00797239 /* AuthTextField.swift */; };
+		57A2463F2A1DA68C00797239 /* GreenyNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A2463E2A1DA68C00797239 /* GreenyNavigationLink.swift */; };
+		57A246412A1DA6BB00797239 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A246402A1DA6BB00797239 /* OTPView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5778E31C2A146A5400F9A05C /* Greeny-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Greeny-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5778E31F2A146A5400F9A05C /* Greeny_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greeny_iOSApp.swift; sourceTree = "<group>"; };
-		5778E3212A146A5400F9A05C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5778E3232A146A5500F9A05C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5778E3262A146A5500F9A05C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5778E3362A147FD900F9A05C /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		57A246302A1DA4B600797239 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		57A246322A1DA4C300797239 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		57A246352A1DA4F500797239 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		57A246382A1DA50F00797239 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		57A2463A2A1DA64D00797239 /* AuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
+		57A2463E2A1DA68C00797239 /* GreenyNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenyNavigationLink.swift; sourceTree = "<group>"; };
+		57A246402A1DA6BB00797239 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,8 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5778E3312A147B5B00F9A05C /* Moya in Frameworks */,
-				5778E32F2A147B5B00F9A05C /* CombineMoya in Frameworks */,
+				57A2462B2A1DA46A00797239 /* Moya in Frameworks */,
+				57A246292A1DA46A00797239 /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +67,8 @@
 		5778E31E2A146A5400F9A05C /* Greeny-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				5778E3362A147FD900F9A05C /* R.generated.swift */,
-				5778E31F2A146A5400F9A05C /* Greeny_iOSApp.swift */,
-				5778E3212A146A5400F9A05C /* ContentView.swift */,
+				57A2462D2A1DA48700797239 /* Application */,
+				57A2462C2A1DA48300797239 /* Scene */,
 				5778E3232A146A5500F9A05C /* Assets.xcassets */,
 				5778E3252A146A5500F9A05C /* Preview Content */,
 			);
@@ -72,6 +81,68 @@
 				5778E3262A146A5500F9A05C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		57A2462C2A1DA48300797239 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				57A246372A1DA4FD00797239 /* Components */,
+				57A246342A1DA4D700797239 /* Extension */,
+				57A2462E2A1DA49800797239 /* Login */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		57A2462D2A1DA48700797239 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5778E31F2A146A5400F9A05C /* Greeny_iOSApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		57A2462E2A1DA49800797239 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				57A246302A1DA4B600797239 /* LoginView.swift */,
+				57A246322A1DA4C300797239 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		57A246342A1DA4D700797239 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				57A246352A1DA4F500797239 /* Int+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		57A246372A1DA4FD00797239 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				57A2463D2A1DA67B00797239 /* NavigationLink */,
+				57A2463C2A1DA66300797239 /* Auth */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		57A2463C2A1DA66300797239 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				57A246382A1DA50F00797239 /* AuthButton.swift */,
+				57A2463A2A1DA64D00797239 /* AuthTextField.swift */,
+				57A246402A1DA6BB00797239 /* OTPView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		57A2463D2A1DA67B00797239 /* NavigationLink */ = {
+			isa = PBXGroup;
+			children = (
+				57A2463E2A1DA68C00797239 /* GreenyNavigationLink.swift */,
+			);
+			path = NavigationLink;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,8 +162,8 @@
 			);
 			name = "Greeny-iOS";
 			packageProductDependencies = (
-				5778E32E2A147B5B00F9A05C /* CombineMoya */,
-				5778E3302A147B5B00F9A05C /* Moya */,
+				57A246282A1DA46A00797239 /* CombineMoya */,
+				57A2462A2A1DA46A00797239 /* Moya */,
 			);
 			productName = "Greeny-iOS";
 			productReference = 5778E31C2A146A5400F9A05C /* Greeny-iOS.app */;
@@ -123,7 +194,7 @@
 			);
 			mainGroup = 5778E3132A146A5400F9A05C;
 			packageReferences = (
-				5778E32D2A147B5B00F9A05C /* XCRemoteSwiftPackageReference "Moya" */,
+				57A246272A1DA46A00797239 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 5778E31D2A146A5400F9A05C /* Products */;
 			projectDirPath = "";
@@ -151,9 +222,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5778E3222A146A5400F9A05C /* ContentView.swift in Sources */,
+				57A246392A1DA50F00797239 /* AuthButton.swift in Sources */,
+				57A246332A1DA4C300797239 /* LoginViewModel.swift in Sources */,
+				57A2463F2A1DA68C00797239 /* GreenyNavigationLink.swift in Sources */,
+				57A246312A1DA4B600797239 /* LoginView.swift in Sources */,
+				57A2463B2A1DA64D00797239 /* AuthTextField.swift in Sources */,
 				5778E3202A146A5400F9A05C /* Greeny_iOSApp.swift in Sources */,
-				5778E3372A147FD900F9A05C /* R.generated.swift in Sources */,
+				57A246412A1DA6BB00797239 /* OTPView.swift in Sources */,
+				57A246362A1DA4F500797239 /* Int+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +430,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5778E32D2A147B5B00F9A05C /* XCRemoteSwiftPackageReference "Moya" */ = {
+		57A246272A1DA46A00797239 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
 			requirement = {
@@ -365,14 +441,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5778E32E2A147B5B00F9A05C /* CombineMoya */ = {
+		57A246282A1DA46A00797239 /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5778E32D2A147B5B00F9A05C /* XCRemoteSwiftPackageReference "Moya" */;
+			package = 57A246272A1DA46A00797239 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = CombineMoya;
 		};
-		5778E3302A147B5B00F9A05C /* Moya */ = {
+		57A2462A2A1DA46A00797239 /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5778E32D2A147B5B00F9A05C /* XCRemoteSwiftPackageReference "Moya" */;
+			package = 57A246272A1DA46A00797239 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */
