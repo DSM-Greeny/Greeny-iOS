@@ -19,6 +19,7 @@
 		57A2463B2A1DA64D00797239 /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A2463A2A1DA64D00797239 /* AuthTextField.swift */; };
 		57A2463F2A1DA68C00797239 /* GreenyNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A2463E2A1DA68C00797239 /* GreenyNavigationLink.swift */; };
 		57A246412A1DA6BB00797239 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A246402A1DA6BB00797239 /* OTPView.swift */; };
+		57A246442A1DB56E00797239 /* GreenyShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A246432A1DB56E00797239 /* GreenyShadow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		57A2463A2A1DA64D00797239 /* AuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
 		57A2463E2A1DA68C00797239 /* GreenyNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenyNavigationLink.swift; sourceTree = "<group>"; };
 		57A246402A1DA6BB00797239 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		57A246432A1DB56E00797239 /* GreenyShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenyShadow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				57A2462D2A1DA48700797239 /* Application */,
+				57A246372A1DA4FD00797239 /* Components */,
+				57A246342A1DA4D700797239 /* Extension */,
 				57A2462C2A1DA48300797239 /* Scene */,
 				5778E3232A146A5500F9A05C /* Assets.xcassets */,
 				5778E3252A146A5500F9A05C /* Preview Content */,
@@ -86,8 +90,6 @@
 		57A2462C2A1DA48300797239 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				57A246372A1DA4FD00797239 /* Components */,
-				57A246342A1DA4D700797239 /* Extension */,
 				57A2462E2A1DA49800797239 /* Login */,
 			);
 			path = Scene;
@@ -121,6 +123,7 @@
 		57A246372A1DA4FD00797239 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				57A246422A1DB56500797239 /* Shadow */,
 				57A2463D2A1DA67B00797239 /* NavigationLink */,
 				57A2463C2A1DA66300797239 /* Auth */,
 			);
@@ -143,6 +146,14 @@
 				57A2463E2A1DA68C00797239 /* GreenyNavigationLink.swift */,
 			);
 			path = NavigationLink;
+			sourceTree = "<group>";
+		};
+		57A246422A1DB56500797239 /* Shadow */ = {
+			isa = PBXGroup;
+			children = (
+				57A246432A1DB56E00797239 /* GreenyShadow.swift */,
+			);
+			path = Shadow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A246442A1DB56E00797239 /* GreenyShadow.swift in Sources */,
 				57A246392A1DA50F00797239 /* AuthButton.swift in Sources */,
 				57A246332A1DA4C300797239 /* LoginViewModel.swift in Sources */,
 				57A2463F2A1DA68C00797239 /* GreenyNavigationLink.swift in Sources */,
