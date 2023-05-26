@@ -10,9 +10,16 @@
 		082B94065BA991F0937B3138 /* TuistBundle+Greeny.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54BF38CAA9272D06DA1053 /* TuistBundle+Greeny.swift */; };
 		1DDE79CFC5FAF895DFAF4AD7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226846F624F7A034C7FAE455 /* LoginView.swift */; };
 		2AACF1EC8111803B582514B6 /* Greeny_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52E081ADCBD1DAA8166D541 /* Greeny_iOSApp.swift */; };
+		303829EB0B85B946AA288EC3 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 44E6523563D93022EF17E04E /* Pretendard-ExtraBold.otf */; };
 		3176913A05A23EA05E0249D2 /* GreenyNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D1D1D85B7A5B56A36B8DE /* GreenyNavigationLink.swift */; };
+		387DA9C0C31C70FA11C10E6E /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EA5F233F5C92E0EBF624F0A3 /* Pretendard-Bold.otf */; };
+		408B53CB464A97D45443FBA7 /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B84E0CD2CFBD201FDC8A8267 /* Pretendard-Light.otf */; };
+		4269B663CF5B8DBF32A1CD11 /* Pretendard-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = C10B5B559DEB55BCBF80CC20 /* Pretendard-ExtraLight.otf */; };
 		4A721BAB372F4AFA2F35B063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2BC1C8E6A431861CD949BB /* Assets.xcassets */; };
+		6C0EE3EC82894D76E4877445 /* Pretendard-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30DE66141968EF727883C53C /* Pretendard-Thin.otf */; };
 		6C80B64193CFD8D79309CD17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C67162A1E23FABC07DEFF4 /* LaunchScreen.storyboard */; };
+		74B68538DE19262356B52DFA /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1501215E95A0A00F38635DE6 /* Pretendard-SemiBold.otf */; };
+		7E3D7F91680738A54DFC4E75 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F2EF4F301762458A7C0A7082 /* Pretendard-Regular.otf */; };
 		885F47D4A729AA66681D4F48 /* AuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FDCAF15EAF722E7E929A5F /* AuthTextField.swift */; };
 		97845C2C6D5DE0B237551C98 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68A413E5023407C224AE3C2 /* Int+.swift */; };
 		AD97BE07ADA5FFEB41FC61A5 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4883A01C977EE1BD7B8CDF2E /* AuthButton.swift */; };
@@ -20,6 +27,9 @@
 		BC4AE989F2DF791ECDD74E01 /* TuistAssets+Greeny.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8884E453DBB107759BD7C /* TuistAssets+Greeny.swift */; };
 		C152515E6FC1650F6AEB78B0 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D23398F76CE8FA55489E4A /* OTPView.swift */; };
 		C18219FCE6E93AA935E0029D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208D44F0107A078103F752D4 /* LoginViewModel.swift */; };
+		CA00C2264D357CB624D5B68D /* TuistFonts+Greeny.swift in Sources */ = {isa = PBXBuildFile; fileRef = B384C4523EBD806417EB147D /* TuistFonts+Greeny.swift */; };
+		D60186CB311A93C9E226B870 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F67F73EF263058023C8E4910 /* Pretendard-Medium.otf */; };
+		EC1F13CBD7B2F415DBE59DFB /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12F26003741F49E9BC9AF066 /* Pretendard-Black.otf */; };
 		EC4FBC8F3F647EF32A57F772 /* GreenyShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD87806E89196EF93BF3D1 /* GreenyShadow.swift */; };
 		F3F0668F0DC14972D2379CA5 /* ThirdPartyLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0B71A2B737B4816F172930 /* ThirdPartyLib.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -40,19 +50,29 @@
 
 /* Begin PBXFileReference section */
 		0F9043CFE3C8B48C7BBAB532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		12F26003741F49E9BC9AF066 /* Pretendard-Black.otf */ = {isa = PBXFileReference; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
+		1501215E95A0A00F38635DE6 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		1A54BF38CAA9272D06DA1053 /* TuistBundle+Greeny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Greeny.swift"; sourceTree = "<group>"; };
 		1B0B71A2B737B4816F172930 /* ThirdPartyLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThirdPartyLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		208D44F0107A078103F752D4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		226846F624F7A034C7FAE455 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		30DE66141968EF727883C53C /* Pretendard-Thin.otf */ = {isa = PBXFileReference; path = "Pretendard-Thin.otf"; sourceTree = "<group>"; };
+		44E6523563D93022EF17E04E /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
 		4883A01C977EE1BD7B8CDF2E /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		696D1D1D85B7A5B56A36B8DE /* GreenyNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenyNavigationLink.swift; sourceTree = "<group>"; };
 		8EDD87806E89196EF93BF3D1 /* GreenyShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenyShadow.swift; sourceTree = "<group>"; };
 		90D23398F76CE8FA55489E4A /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		97A8884E453DBB107759BD7C /* TuistAssets+Greeny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+Greeny.swift"; sourceTree = "<group>"; };
 		AF8E3DC33D93413A24DFF6A4 /* Greeny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Greeny.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B384C4523EBD806417EB147D /* TuistFonts+Greeny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistFonts+Greeny.swift"; sourceTree = "<group>"; };
+		B84E0CD2CFBD201FDC8A8267 /* Pretendard-Light.otf */ = {isa = PBXFileReference; path = "Pretendard-Light.otf"; sourceTree = "<group>"; };
 		BF2BC1C8E6A431861CD949BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C10B5B559DEB55BCBF80CC20 /* Pretendard-ExtraLight.otf */ = {isa = PBXFileReference; path = "Pretendard-ExtraLight.otf"; sourceTree = "<group>"; };
 		D52E081ADCBD1DAA8166D541 /* Greeny_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greeny_iOSApp.swift; sourceTree = "<group>"; };
 		E8FDCAF15EAF722E7E929A5F /* AuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextField.swift; sourceTree = "<group>"; };
+		EA5F233F5C92E0EBF624F0A3 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		F2EF4F301762458A7C0A7082 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		F67F73EF263058023C8E4910 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		F68A413E5023407C224AE3C2 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
 		F6C67162A1E23FABC07DEFF4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,9 +144,26 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		31968F43536EE07006E7FC7E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				12F26003741F49E9BC9AF066 /* Pretendard-Black.otf */,
+				EA5F233F5C92E0EBF624F0A3 /* Pretendard-Bold.otf */,
+				44E6523563D93022EF17E04E /* Pretendard-ExtraBold.otf */,
+				C10B5B559DEB55BCBF80CC20 /* Pretendard-ExtraLight.otf */,
+				B84E0CD2CFBD201FDC8A8267 /* Pretendard-Light.otf */,
+				F67F73EF263058023C8E4910 /* Pretendard-Medium.otf */,
+				F2EF4F301762458A7C0A7082 /* Pretendard-Regular.otf */,
+				1501215E95A0A00F38635DE6 /* Pretendard-SemiBold.otf */,
+				30DE66141968EF727883C53C /* Pretendard-Thin.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		371714B9BF580F84484992B9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				31968F43536EE07006E7FC7E /* Fonts */,
 				BF2BC1C8E6A431861CD949BB /* Assets.xcassets */,
 				F6C67162A1E23FABC07DEFF4 /* LaunchScreen.storyboard */,
 			);
@@ -177,6 +214,7 @@
 			children = (
 				97A8884E453DBB107759BD7C /* TuistAssets+Greeny.swift */,
 				1A54BF38CAA9272D06DA1053 /* TuistBundle+Greeny.swift */,
+				B384C4523EBD806417EB147D /* TuistFonts+Greeny.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -275,6 +313,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A721BAB372F4AFA2F35B063 /* Assets.xcassets in Resources */,
+				EC1F13CBD7B2F415DBE59DFB /* Pretendard-Black.otf in Resources */,
+				387DA9C0C31C70FA11C10E6E /* Pretendard-Bold.otf in Resources */,
+				303829EB0B85B946AA288EC3 /* Pretendard-ExtraBold.otf in Resources */,
+				4269B663CF5B8DBF32A1CD11 /* Pretendard-ExtraLight.otf in Resources */,
+				408B53CB464A97D45443FBA7 /* Pretendard-Light.otf in Resources */,
+				D60186CB311A93C9E226B870 /* Pretendard-Medium.otf in Resources */,
+				7E3D7F91680738A54DFC4E75 /* Pretendard-Regular.otf in Resources */,
+				74B68538DE19262356B52DFA /* Pretendard-SemiBold.otf in Resources */,
+				6C0EE3EC82894D76E4877445 /* Pretendard-Thin.otf in Resources */,
 				6C80B64193CFD8D79309CD17 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +357,7 @@
 			files = (
 				BC4AE989F2DF791ECDD74E01 /* TuistAssets+Greeny.swift in Sources */,
 				082B94065BA991F0937B3138 /* TuistBundle+Greeny.swift in Sources */,
+				CA00C2264D357CB624D5B68D /* TuistFonts+Greeny.swift in Sources */,
 				2AACF1EC8111803B582514B6 /* Greeny_iOSApp.swift in Sources */,
 				AD97BE07ADA5FFEB41FC61A5 /* AuthButton.swift in Sources */,
 				885F47D4A729AA66681D4F48 /* AuthTextField.swift in Sources */,
