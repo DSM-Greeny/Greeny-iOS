@@ -25,7 +25,9 @@ extension Project{
                     resources: ["Resources/**"],
                     scripts: [.swiftLintScript],
                     dependencies: [
-                        .project(target: "ThirdPartyLib", path: "../ThirdPartyLib")
+                        .project(target: "ThirdPartyLib", path: "../ThirdPartyLib"),
+                        .project(target: "Service", path: "../Service")
+
                     ] + dependencies
                 )
             ]

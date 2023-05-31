@@ -11,19 +11,24 @@ struct LoginView: View {
                 Spacer()
                     .frame(height: 172)
                 Group {
-                    HStack(spacing: 3) {
+                    HStack(spacing: 5) {
+                        Image(GreenyAsset.appLogoSmall.name)
+                            .frame(width: 35, height: 35)
+                        
                         Text("Login")
-                            .font(.system(size: 16, weight: .semibold))
+                            .font(.system(size: 26, weight: .bold))
                     }
-                    .padding(.bottom, 30)
+                    .padding(.bottom, 15)
                     AuthTextField("아이디", isSecret: false, text: $text)
-                        .padding(.bottom, 25)
+                        .padding(.bottom, 15)
+
                     AuthTextField("비밀번호", isSecret: true, text: $text)
-                        .padding(.bottom, 25)
+
+                        .padding(.bottom, 15)
                 }
                 AuthButton(text: "Login") {
-                                    }
-                .padding(.bottom, 20)
+                }
+                .padding(.bottom, 15)
 
                 HStack(alignment: .bottom, spacing: 3) {
                     Spacer()
@@ -46,6 +51,8 @@ struct LoginView: View {
             }
             .padding(.horizontal, 24)
             .navigationBarTitleDisplayMode(.inline)
+            .greenyBackground()
+
         }
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
@@ -54,6 +61,5 @@ struct LoginView: View {
                 }
             }
         }
-
     }
 }

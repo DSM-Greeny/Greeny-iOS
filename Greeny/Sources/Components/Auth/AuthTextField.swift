@@ -19,6 +19,7 @@ struct AuthTextField: View {
 
     var body: some View {
         ZStack(alignment: .trailing) {
+
             HStack {
                 if isShow {
                     TextField(placeholder, text: $text)
@@ -26,14 +27,19 @@ struct AuthTextField: View {
                     SecureField(placeholder, text: $text)
                 }
             }
-            .font(.system(size: 16, weight: .regular))
-            .frame(height: 45)
+            .font(.system(size: 16, weight: .medium))
+            .frame(height: 55)
             .padding(.leading, 19)
             .textInputAutocapitalization(.never)
+            .background(
+                RoundedRectangle(cornerRadius: 15, style: .continuous)
+                    .fill(GreenyAsset.background1.swiftUIColor)
+            )
             .overlay {
-                RoundedRectangle(cornerRadius: 4)
-                    .stroke(Color.gray, lineWidth: 1)
+                RoundedRectangle(cornerRadius: 15)
+                    .stroke(GreenyAsset.background3.swiftUIColor, lineWidth: 1)
             }
+            .greenyShadow()
             if isSecret {
                 HStack {
                     Button {
@@ -47,11 +53,5 @@ struct AuthTextField: View {
                 }
             }
         }
-    }
-}
-
-struct AuthTextField_Previews: PreviewProvider {
-    static var previews: some View {
-        AuthTextField("비밀번호", isSecret: true, text: .constant(""))
     }
 }

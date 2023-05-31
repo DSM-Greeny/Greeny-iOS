@@ -6,9 +6,9 @@ public struct GreenyShadow: ViewModifier {
     public func body(content: Content) -> some View {
         content
             .shadow(
-                color: Color("shadow 1"),
-                yPoint: 1,
-                blur: 20
+                color: .init(asset: GreenyAsset.shadow1),
+                yPoint: 0,
+                blur: 15
             )
     }
 }

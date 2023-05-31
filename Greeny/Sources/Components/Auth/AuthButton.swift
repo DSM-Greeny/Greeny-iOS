@@ -67,11 +67,13 @@ extension WideButtonStyle {
 
         var body: some View {
             configuration.label
-                .font(.system(size: 15, weight: .medium))
+                .frame(height: 55)
                 .background(color)
+                .font(.system(size: 20, weight: .bold))
                 .foregroundColor(.white)
                 .cornerRadius(15)
                 .opacity(opacity)
+                .greenyShadow()
         }
     }
 }
