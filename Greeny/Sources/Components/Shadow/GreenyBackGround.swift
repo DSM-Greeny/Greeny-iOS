@@ -4,6 +4,7 @@ struct BackgroundModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .background {
+//                Color.red
                 Color.init(asset: GreenyAsset.background1)
                     .ignoresSafeArea()
             }

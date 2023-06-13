@@ -2,6 +2,7 @@ import SwiftUI
 
 struct LoginView: View {
     @State var text: String = ""
+    @State var signUpButtonPressed: Bool = false
     var body: some View {
         NavigationView {
             VStack(
@@ -14,7 +15,7 @@ struct LoginView: View {
                     HStack(spacing: 5) {
                         Image(GreenyAsset.appLogoSmall.name)
                             .frame(width: 35, height: 35)
-                        
+
                         Text("Login")
                             .font(.system(size: 26, weight: .bold))
                     }
@@ -23,7 +24,6 @@ struct LoginView: View {
                         .padding(.bottom, 15)
 
                     AuthTextField("비밀번호", isSecret: true, text: $text)
-
                         .padding(.bottom, 15)
                 }
                 AuthButton(text: "Login") {
@@ -36,7 +36,7 @@ struct LoginView: View {
                         .font(.system(size: 12, weight: .regular))
                         .foregroundColor(.gray)
                     Button {
-//                        viewModel.buttonPressed.toggle()
+                        signUpButtonPressed.toggle()
                     } label: {
                         Text("회원가입")
                             .font(.system(size: 12, weight: .regular))
@@ -49,6 +49,7 @@ struct LoginView: View {
 
                 Spacer()
             }
+            .navigate(to: EmailView(), when: $signUpButtonPressed)
             .padding(.horizontal, 24)
             .navigationBarTitleDisplayMode(.inline)
             .greenyBackground()

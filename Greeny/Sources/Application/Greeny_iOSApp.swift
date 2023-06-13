@@ -11,7 +11,8 @@ import SwiftUI
 struct GreenyiOSApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+                MyPageView()
+            .accentColor(.black)
         }
     }
 }

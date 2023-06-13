@@ -21,7 +21,7 @@ struct ComposedWebView: UIViewRepresentable {
         webView.navigationDelegate = context.coordinator
         webView.scrollView.delegate = context.coordinator
         self.setLoadingProgress(webView: webView)
-//        self.setEvaluateJavaScript(webView: webView)
+        self.setEvaluateJavaScript(webView: webView)
 //        self.setRefreshControl(webView: webView)
 
         if let url = URL(string: self.state.urlString) {
@@ -51,18 +51,10 @@ extension ComposedWebView {
 //            "accessToken": self.state.accessTokenGetter()
 //        ], configuration: configuration)
 //
-//        self.registerBridge(name: [
-//            "navigate",
-//            "isRightButtonEnabled",
-//            "imageDetail",
-//            "back",
-//            "confirm",
-//            "error",
-//            "photoPicker",
-//            "actionSheet",
-//            "timePicker",
-//            "periodPicker"
-//        ], configuration: configuration)
+        self.registerBridge(name: [
+            "navigate",
+            "logout"
+        ], configuration: configuration)
 
         return configuration
     }
@@ -85,6 +77,7 @@ extension ComposedWebView {
     private func registerBridge(name: [String], configuration: WKWebViewConfiguration) {
         name.forEach {
             configuration.userContentController.add(self.makeCoordinator(), name: $0)
+            
         }
     }
 }
