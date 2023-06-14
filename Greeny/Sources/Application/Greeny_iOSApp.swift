@@ -11,8 +11,20 @@ import SwiftUI
 struct GreenyiOSApp: App {
     var body: some Scene {
         WindowGroup {
-                MyPageView()
-            .accentColor(.black)
+            if #available(iOS 16.0, *) {
+                NavigationStack {
+                    MainTabView()
+                }
+                .accentColor(.black)
+
+            } else {
+                // Fallback on earlier versions
+                NavigationView {
+                    MainTabView()
+                }
+                .accentColor(.black)
+
+            }
         }
     }
 }

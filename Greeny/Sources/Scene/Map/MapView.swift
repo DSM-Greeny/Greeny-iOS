@@ -1,11 +1,11 @@
 import SwiftUI
 import Service
 
-struct MyPageView: View {
+struct MapView: View {
     var body: some View {
         NavigationView {
             XWebKitView(
-                urlString: "https://dsm-greeny.netlify.app/mypage",
+                urlString: "https://dsm-greeny.netlify.app/map",
                 accessTokenGetter: { "" }
             )
             .greenyBackground()

@@ -34,7 +34,6 @@ struct EmailView: View {
             .greenyBackground()
             .padding(.horizontal, 24)
             .navigationBarTitleDisplayMode(.inline)
-            .setBackbutton()
         }
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {

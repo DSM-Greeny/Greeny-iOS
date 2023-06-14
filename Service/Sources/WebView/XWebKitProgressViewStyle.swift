@@ -12,7 +12,7 @@ struct XWebKitProgressViewStyle: ProgressViewStyle {
                     width: CGFloat(configuration.fractionCompleted ?? 0) * UIScreen.main.bounds.size.width,
                     height: 1
                 )
-                .foregroundColor(.green)
+                .foregroundColor(Color("Main 1"))
         }
     }
 }

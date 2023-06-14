@@ -48,7 +48,6 @@ struct SetBackButtonModifier: ViewModifier {
                     }
                     .navigationBarBackButtonHidden()
                     .foregroundColor(.black)
-                    .padding()
                 }
             }
     }

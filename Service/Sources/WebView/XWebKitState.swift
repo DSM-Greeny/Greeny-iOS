@@ -17,6 +17,8 @@ class XWebKitState: ObservableObject {
     var rightButtonText: String?
     @Published var isRightButtonEnabled: Bool = false
     @Published var naviagteRightButtonTap: Void?
+    @Published var naviagtelogOutButtonTap: Void?
+
 
     // navigate - 네비게이팅 될곳의 정보
     @Published var needsToNavigate: Bool = false

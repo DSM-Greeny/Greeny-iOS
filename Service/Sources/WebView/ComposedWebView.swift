@@ -45,12 +45,7 @@ extension ComposedWebView {
         preferences.javaScriptCanOpenWindowsAutomatically = false
 
         let configuration = WKWebViewConfiguration()
-//        configuration.preferences = preferences
-//
-//        self.setWebCookie(cookie: [
-//            "accessToken": self.state.accessTokenGetter()
-//        ], configuration: configuration)
-//
+
         self.registerBridge(name: [
             "navigate",
             "logout"
@@ -77,7 +72,6 @@ extension ComposedWebView {
     private func registerBridge(name: [String], configuration: WKWebViewConfiguration) {
         name.forEach {
             configuration.userContentController.add(self.makeCoordinator(), name: $0)
-            
         }
     }
 }
@@ -89,79 +83,23 @@ extension ComposedWebView {
         self.state.$naviagteRightButtonTap
             .compactMap { $0 }
             .sink { _ in
-                print("naviagteRightButtonTap")
+                print("navigate")
                 self.evaluateJavaScript(
                     webView: webView,
-                    bridgeName: "rightButtonTaped",
+                    bridgeName: "navigate",
                     data: "{ }"
                 )
             }
             .store(in: &self.state.cancellables)
 
-        self.state.$alertResponse
-            .combineLatest(self.state.$confirmId)
-            .filter { $0.0 != nil }
-            .sink {
-                print($0)
-                self.evaluateJavaScript(
-                    webView: webView,
-                    bridgeName: "confirm",
-                    data: "{ id: \"\($0.1)\", success: \($0.0 ?? true) }"
-                )
-            }
-            .store(in: &self.state.cancellables)
-
-        self.state.$selectedImages
+        self.state.$naviagteRightButtonTap
             .compactMap { $0 }
-            .map { $0.map {
-                guard let jpegData = $0.jpegData(compressionQuality: 1) else { return "" }
-                return "data:image/png;base64," + jpegData.base64EncodedString()
-            }}
-            .combineLatest(self.state.$photoPickerId)
-            .sink {
+            .sink { _ in
+                print("navigate")
                 self.evaluateJavaScript(
                     webView: webView,
-                    bridgeName: "photoPicker",
-                    data: "{ id: \"\($0.1)\", photos: \($0.0) }"
-                )
-            }
-            .store(in: &self.state.cancellables)
-
-        self.state.$selectedMenuIndex
-            .combineLatest(self.state.$actionSheetId)
-            .filter { $0.0 != nil }
-            .sink {
-                print($0)
-                self.evaluateJavaScript(
-                    webView: webView,
-                    bridgeName: "actionSheet",
-                    data: "{ id: \"\($0.1)\", index: \($0.0 ?? 0) }"
-                )
-            }
-            .store(in: &self.state.cancellables)
-
-        self.state.$selectedTime
-            .combineLatest(self.state.$timePickerId)
-            .filter { $0.0 != "" }
-            .sink {
-                print("timePicker")
-                self.evaluateJavaScript(
-                    webView: webView,
-                    bridgeName: "timePicker",
-                    data: "{ id: \"\($0.1)\", time: \"\($0.0)\" }"
-                )
-            }
-            .store(in: &self.state.cancellables)
-
-        self.state.$selectedPeriod
-            .combineLatest(self.state.$periodPickerId)
-            .filter { $0.0 != nil }
-            .sink {
-                print("periodPicker")
-                self.evaluateJavaScript(
-                    webView: webView,
-                    bridgeName: "periodPicker",
-                    data: "{ id: \"\($0.1)\", period: \($0.0 ?? 1) }"
+                    bridgeName: "logout",
+                    data: "{ }"
                 )
             }
             .store(in: &self.state.cancellables)
