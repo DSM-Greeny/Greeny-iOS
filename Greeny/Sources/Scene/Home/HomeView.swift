@@ -2,6 +2,7 @@ import SwiftUI
 import Service
 
 struct HomeView: View {
+    @State var isNavigate = false
     var body: some View {
         NavigationView {
             VStack {
@@ -21,6 +22,17 @@ struct HomeView: View {
 
             }
             .greenyBackground()
+            .navigate(to: HomeDetailView(), when: $isNavigate)
+            .overlay(content: {
+                Button(action: {
+                    print("dskfjdkslf")
+                    isNavigate.toggle()
+                }, label: {
+                    Text("1234567890-")
+                        .foregroundColor(.clear)
+                        .frame(height: 50)
+                })
+            })
         }
         .navigationViewStyle(.stack)
     }

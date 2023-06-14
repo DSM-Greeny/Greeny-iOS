@@ -11,7 +11,6 @@ struct MealCarouselView: View {
     let spacing: CGFloat = 20
     let widthOfHiddenCards: CGFloat = UIScreen.main.bounds.width / 2 * 0.08
     let home = homeData
-    @State var isNavigate = false
     var body: some View {
         CarouselCanvas {
             Carousel(
@@ -21,11 +20,25 @@ struct MealCarouselView: View {
             ) {
                 HStack(spacing: 20) {
                     homeCellView(data: home[0], type: 0)
+                        .onAppear {
+                            publicIsId = 1
+                        }
                     homeCellView(data: home[1], type: 1)
+                        .onAppear {
+                            publicIsId = 2
+                        }
                     homeCellView(data: home[2], type: 2)
+                        .onAppear {
+                            publicIsId = 3
+                        }
                     homeCellView(data: home[3], type: 3)
+                        .onAppear {
+                            publicIsId = 4
+                        }
                     homeCellView(data: home[4], type: 4)
-
+                        .onAppear {
+                            publicIsId = 5
+                        }
                 }
             }
         }

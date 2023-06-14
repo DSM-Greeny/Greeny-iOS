@@ -17,7 +17,7 @@ struct PostView: View {
                         print("dskfjdkslf")
                         isNavigate.toggle()
                     }, label: {
-                        Text("buttonbuttonbuttonbuttonbutton")
+                        Text("lll")
                             .foregroundColor(.clear)
                             .frame(height: 50)
                     })
